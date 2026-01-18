@@ -152,19 +152,19 @@ export default function Home() {
         </div>
         <div className="team-grid">
           <div className="team-card">
-            <div className="team-avatar">👨‍⚕️</div>
+            <img src="/drpark.jpg" alt="Dr. Michael Park" className="team-photo" />
             <h3>Dr. Michael Park</h3>
             <p className="role">Founder & Lead Dentist</p>
             <p>Harvard School of Dental Medicine. 15+ years specializing in cosmetic and implant dentistry.</p>
           </div>
           <div className="team-card">
-            <div className="team-avatar">👩‍⚕️</div>
+            <img src="/drzhang.png" alt="Dr. Emily Zhang" className="team-photo" />
             <h3>Dr. Emily Zhang</h3>
             <p className="role">Cosmetic Specialist</p>
             <p>USC School of Dentistry. Expert in smile makeovers and minimally invasive aesthetics.</p>
           </div>
           <div className="team-card">
-            <div className="team-avatar">👨‍⚕️</div>
+            <img src="/drjamis.jpg" alt="Dr. James Wilson" className="team-photo" />
             <h3>Dr. James Wilson</h3>
             <p className="role">Orthodontist</p>
             <p>Invisalign Diamond Provider. Specializing in adult orthodontics and complex cases.</p>
