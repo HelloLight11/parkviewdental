@@ -78,26 +78,32 @@ export default function Home() {
         </div>
         <div className="services-grid">
           <div className="service-card">
+            <div className="service-icon">💎</div>
             <h3>Cosmetic Dentistry</h3>
             <p>Veneers, whitening, and smile design to create your perfect smile.</p>
           </div>
           <div className="service-card">
+            <div className="service-icon">🔬</div>
             <h3>Implant Dentistry</h3>
             <p>State-of-the-art implant solutions for permanent tooth replacement.</p>
           </div>
           <div className="service-card">
+            <div className="service-icon">📐</div>
             <h3>Invisalign</h3>
             <p>Clear aligner therapy for discreet, comfortable teeth straightening.</p>
           </div>
           <div className="service-card">
+            <div className="service-icon">🛡️</div>
             <h3>Preventive Care</h3>
             <p>Advanced diagnostics and cleanings to maintain optimal oral health.</p>
           </div>
           <div className="service-card">
+            <div className="service-icon">✨</div>
             <h3>Same-Day Crowns</h3>
             <p>CEREC technology for beautiful, custom crowns in a single visit.</p>
           </div>
           <div className="service-card">
+            <div className="service-icon">😌</div>
             <h3>Sedation Options</h3>
             <p>Comfortable care for anxious patients with multiple sedation levels.</p>
           </div>
@@ -112,21 +118,18 @@ export default function Home() {
             <p>We invest in the latest dental technology to provide faster, more accurate, and more comfortable treatments.</p>
             <div className="tech-list">
               <div className="tech-item">
-                <div className="tech-item-icon">📷</div>
                 <div className="tech-item-text">
                   <h4>3D Digital Scanning</h4>
                   <p>No more messy impressions. Precise digital scans for perfect-fitting restorations.</p>
                 </div>
               </div>
               <div className="tech-item">
-                <div className="tech-item-icon">🖥️</div>
                 <div className="tech-item-text">
                   <h4>CBCT Imaging</h4>
                   <p>3D X-rays for comprehensive diagnosis and treatment planning.</p>
                 </div>
               </div>
               <div className="tech-item">
-                <div className="tech-item-icon">⚡</div>
                 <div className="tech-item-text">
                   <h4>Laser Dentistry</h4>
                   <p>Minimally invasive procedures with faster healing times.</p>
@@ -134,7 +137,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="tech-image">🦷</div>
+          <div className="tech-image"></div>
         </div>
       </section>
 
