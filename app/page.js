@@ -10,7 +10,7 @@ export default function Home() {
 
       {/* Navigation */}
       <nav>
-        <Link href="/" className="logo">Parkview<span>.</span></Link>
+        <Link href="/" className="logo">Parkview <span>Dental</span></Link>
         <div className="nav-links">
           <a href="#services" className="nav-link">Services</a>
           <a href="#technology" className="nav-link">Technology</a>
@@ -242,7 +242,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer>
-        <Link href="/" className="footer-logo">Parkview<span>.</span></Link>
+        <Link href="/" className="footer-logo">Parkview <span>Dental</span></Link>
         <div className="footer-links">
           <a href="#services">Services</a>
           <a href="#technology">Technology</a>
