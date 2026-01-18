@@ -138,6 +138,7 @@ export default function SameDayCrowns() {
           <a href="/#contact">Contact</a>
         </div>
         <p className="footer-copy">© 2026 Parkview Modern Dentistry. All rights reserved.</p>
+        <p className="footer-powered">Powered by <a href="https://launchsmile.com" target="_blank" rel="noopener noreferrer">LaunchSmile</a></p>
       </footer>
     </>
   )
