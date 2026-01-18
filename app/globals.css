@@ -94,6 +94,48 @@ nav {
   transform: translateY(-2px);
 }
 
+/* Dropdown Menu */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.5rem;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(20, 184, 166, 0.1);
+  color: var(--color-primary);
+}
+
 /* Hero */
 .hero {
   min-height: 100vh;
@@ -653,6 +695,176 @@ footer {
   text-decoration: underline;
 }
 
+/* Service Pages */
+.service-hero {
+  padding: 10rem 4rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(20, 184, 166, 0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.service-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.service-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.service-hero p {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+}
+
+.service-overview {
+  padding: 4rem;
+  background: var(--color-bg-secondary);
+}
+
+.service-overview-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.service-overview-content h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.service-overview-content p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.service-overview-image {
+  background: linear-gradient(135deg, var(--color-card) 0%, var(--color-bg) 100%);
+  border-radius: 20px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8rem;
+  border: 1px solid var(--color-border);
+}
+
+.service-treatments {
+  padding: 6rem 4rem;
+}
+
+.treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.treatment-card {
+  padding: 2rem;
+  background: var(--color-card);
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.treatment-card:hover {
+  border-color: var(--color-primary);
+}
+
+.treatment-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary-light);
+}
+
+.treatment-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.service-why {
+  padding: 6rem 4rem;
+  background: var(--color-bg-secondary);
+}
+
+.service-why-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-why h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.why-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.why-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin: 0 auto 1rem;
+}
+
+.why-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.why-item p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   nav {
@@ -696,5 +908,28 @@ footer {
     padding: 2rem 1.5rem;
     flex-direction: column;
     text-align: center;
+  }
+
+  .nav-dropdown .dropdown-menu {
+    display: none;
+  }
+
+  .service-hero {
+    padding: 7rem 1.5rem 3rem;
+  }
+
+  .service-overview,
+  .service-treatments,
+  .service-why {
+    padding: 3rem 1.5rem;
+  }
+
+  .service-overview-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .service-overview-image {
+    order: -1;
+    font-size: 5rem;
   }
 }

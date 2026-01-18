@@ -12,7 +12,17 @@ export default function Home() {
       <nav>
         <Link href="/" className="logo">Parkview <span>Dental</span></Link>
         <div className="nav-links">
-          <a href="#services" className="nav-link">Services</a>
+          <div className="nav-dropdown">
+            <a href="#services" className="nav-link">Services</a>
+            <div className="dropdown-menu">
+              <Link href="/services/cosmetic-dentistry">Cosmetic Dentistry</Link>
+              <Link href="/services/implant-dentistry">Implant Dentistry</Link>
+              <Link href="/services/invisalign">Invisalign</Link>
+              <Link href="/services/preventive-care">Preventive Care</Link>
+              <Link href="/services/same-day-crowns">Same-Day Crowns</Link>
+              <Link href="/services/sedation-options">Sedation Options</Link>
+            </div>
+          </div>
           <a href="#technology" className="nav-link">Technology</a>
           <a href="#team" className="nav-link">Team</a>
           <a href="#contact" className="nav-cta">Book Online</a>
